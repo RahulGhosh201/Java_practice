@@ -1,0 +1,24 @@
+Difference between array, arrayList and list
+1. array has fixed size
+    int[] arr=new int[5];
+    String[] str={"Apple", "Banana", "Apple", "Orange"};
+    Multidimensional array->int arr[][]=new int[r][c];
+
+2. ArrayList is part of java's collections framework.
+    in case of arrayList, you don't need to specify the size upfront.
+    we can dynamically resize itself when elements are added or removed.
+
+    ArrayList<Integer> arr=new ArrayList<>();
+    arr.add(1);
+    arr.add(2);
+    
+3. List is a collection of ordered elements. Both ArrayList and LinedList are concrete implementations
+    of the 'List' interface.
+    List<Integer> list=new ArrayList<>();
+    list.add("Banana");
+    list.add("Apple");
+
+
+Use an Array if you need a simple, fixed-size collection of elements and performance is critical.
+Use an ArrayList when you need a resizable array-like structure and want the convenience of built-in methods.
+Use a List when you want to write more flexible and general code, allowing you to switch between different list implementations if necessary.
